@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.toshiba.login_test1.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="12dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/email_icon" />
+
+            <EditText
+                android:id="@+id/emailTextView"
+                style="@style/textView"
+                android:background="@color/TextViewBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email Address"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/line2pass"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/passwordImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/key_icon" />
+
+                <EditText
+                    android:id="@+id/passwordTextView"
+                    style="@style/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="password"
+                    android:background="@color/TextViewBackground"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line3luck"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/againImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/luck" />
+
+                <EditText
+                    android:id="@+id/againTextView"
+                    style="@style/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Again"
+                    android:background="@color/TextViewBackground"/>
+            </LinearLayout>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/mobileNumberEditeText"
+            style="@style/textView"
+            android:layout_gravity="center"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Mobile Number"
+            android:background="@color/TextViewBackground"
+            />
+        <Button
+            android:id="@+id/continueButton"
+            style="@style/textView"
+            android:layout_gravity="center"
+            android:background="@color/TextViewBackground"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:text="Countinue"
+            android:layout_margin="12dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textView"
+            android:text="Already have an account ?"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sing In"
+            style="@style/textView"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
